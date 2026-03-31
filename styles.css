@@ -9,6 +9,12 @@
   --muted: #9aa0a8;
   --accent: #e63946;
   --accent-soft: #ff6b6b;
+  /* Per-artifact accent tokens */
+  --accent-supra: #ff6b6b;
+  --accent-skyline: #4fd1c5;
+  --accent-rx7: #f7c948;
+  --accent-nsx: #8aa0ff;
+  --card-accent: var(--accent-soft);
   --border: rgba(255, 255, 255, 0.08);
 }
 
@@ -370,6 +376,17 @@ body {
 
 .car-card, .artifact-card { transition: transform 220ms ease, box-shadow 220ms ease; }
 .car-card:hover, .artifact-card:hover { transform: translateY(-6px); box-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+
+/* per-card accent wiring */
+.accent-supra { --card-accent: var(--accent-supra); }
+.accent-skyline { --card-accent: var(--accent-skyline); }
+.accent-rx7 { --card-accent: var(--accent-rx7); }
+.accent-nsx { --card-accent: var(--accent-nsx); }
+
+.car-card, .artifact-card { border-left: 4px solid var(--card-accent, transparent); padding-left: 1rem; }
+.car-card-header span { color: var(--card-accent, var(--accent-soft)); }
+
+.img-credit { margin: 0.45rem 0 0; font-size: 0.85rem; color: var(--muted); font-style: italic; }
 
 @media (max-width: 840px) {
   .site-header {
