@@ -8,6 +8,7 @@
   --panel-strong: rgba(255, 255, 252, 0.98);
   --line: rgba(45, 56, 66, 0.14);
   --text: #1a2430;
+  --brand-title: #0d1722;
   --muted: #4f5d6b;
   --accent: #d86f43;
   --accent-2: #78b9b1;
@@ -121,7 +122,6 @@ a {
   color: var(--accent-3);
 }
 
-.brand-title,
 .hero-copy h1,
 .section-heading h2,
 .feature-body h3,
@@ -136,9 +136,11 @@ a {
 }
 
 .brand-title {
+  color: var(--brand-title);
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(13, 23, 34, 0.14);
 }
 
 .site-nav {
@@ -731,10 +733,12 @@ a {
 }
 
 .brand-title {
+  color: var(--brand-title);
   font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(13, 23, 34, 0.14);
 }
 
 .site-nav {
@@ -942,7 +946,6 @@ a {
 .feature-body h3,
 .artifact-header h3,
 .timeline-item h3,
-.brand-title,
 .hero-copy h1,
 .section-heading h2,
 .panel-stat strong {
