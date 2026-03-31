@@ -86,3 +86,16 @@ This project follows the spec-driven workflow:
 - Create an interactive exhibit map or timeline.
 - Add a “media influence” page showing movies, games, and pop culture connections.
 - Add quotes, sources, or curated references to strengthen credibility.
+ 
+## Visuals and animations added
+- Inline SVG placeholders and decorative silhouettes were added to key artifact cards.
+- CSS reveal animations and hover transitions provide smooth micro-interactions.
+- A small `scripts.js` file uses IntersectionObserver to animate sections on scroll.
+
+To replace the SVG placeholders with your own images:
+
+1. Add images to the repo in an `assets/` folder (e.g., `assets/supra.jpg`).
+2. Replace the inline SVG block inside the car card with an `<img src="assets/supra.jpg" alt="Toyota Supra">`.
+3. Update the README or page copy to credit image sources where required.
+
+If you'd like, I can add an `assets/` folder and wire example images into the gallery next.
