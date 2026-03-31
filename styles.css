@@ -2,17 +2,17 @@
 
 :root {
   color-scheme: dark;
-  --bg: #0f1720;
-  --bg-soft: #17212b;
-  --panel: rgba(18, 24, 32, 0.82);
-  --panel-strong: rgba(20, 28, 37, 0.94);
-  --line: rgba(236, 229, 213, 0.12);
-  --text: #f7f1e3;
-  --muted: #ccbfa6;
-  --accent: #d96b3b;
-  --accent-2: #9db8ac;
-  --accent-3: #e8c77a;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  --bg: #0d1117;
+  --bg-soft: #161d26;
+  --panel: rgba(23, 29, 38, 0.96);
+  --panel-strong: rgba(18, 24, 32, 0.98);
+  --line: rgba(255, 255, 255, 0.16);
+  --text: #f8fbff;
+  --muted: #d7dee7;
+  --accent: #ff8a57;
+  --accent-2: #8fd4cb;
+  --accent-3: #ffd27a;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
   --radius-xl: 28px;
   --radius-lg: 22px;
   --radius-md: 16px;
@@ -39,9 +39,9 @@ body {
   margin: 0;
   min-height: 100%;
   background:
-    radial-gradient(circle at top left, rgba(217, 107, 59, 0.22), transparent 28%),
-    radial-gradient(circle at 85% 18%, rgba(157, 184, 172, 0.18), transparent 26%),
-    linear-gradient(145deg, #0b1118 0%, #121b24 52%, #0c131b 100%);
+    radial-gradient(circle at top left, rgba(255, 138, 87, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(143, 212, 203, 0.14), transparent 26%),
+    linear-gradient(145deg, #090d12 0%, #0f141b 52%, #0b1016 100%);
   color: var(--text);
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.6;
@@ -137,7 +137,7 @@ a {
 
 .site-nav a {
   text-decoration: none;
-  color: var(--muted);
+  color: #eef4fb;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid transparent;
   transition: color 180ms ease, border-color 180ms ease;
@@ -152,7 +152,7 @@ a {
 .hero,
 .section-grid,
 .site-footer {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015));
+  background: linear-gradient(180deg, rgba(23, 29, 38, 0.98), rgba(18, 24, 32, 0.96));
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
@@ -214,8 +214,8 @@ a {
   min-height: 3.25rem;
   padding: 0.85rem 1.35rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), #f1b66d);
-  color: #10151d;
+  background: linear-gradient(135deg, var(--accent), #ffd27a);
+  color: #0d1117;
   font-weight: 700;
   box-shadow: 0 12px 30px rgba(217, 107, 59, 0.32);
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -230,7 +230,7 @@ a {
 .text-link {
   display: inline-flex;
   align-items: center;
-  color: var(--text);
+  color: #f8fbff;
   font-weight: 500;
   gap: 0.5rem;
 }
@@ -249,8 +249,8 @@ a {
 .panel-stat {
   border-radius: var(--radius-lg);
   padding: 1.25rem;
-  background: linear-gradient(180deg, rgba(16, 23, 31, 0.85), rgba(21, 29, 39, 0.94));
-  border: 1px solid rgba(247, 241, 227, 0.09);
+  background: linear-gradient(180deg, rgba(28, 36, 47, 0.98), rgba(20, 26, 35, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .panel-stat strong {
@@ -308,8 +308,8 @@ a {
 .timeline-item,
 .source-callout {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(247, 241, 227, 0.08);
-  background: linear-gradient(180deg, rgba(18, 24, 32, 0.92), rgba(17, 22, 29, 0.84));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(26, 34, 45, 0.98), rgba(19, 25, 34, 0.98));
 }
 
 .essay-card,
@@ -326,6 +326,18 @@ a {
 .artifact-points,
 .site-footer p {
   color: var(--muted);
+}
+
+.essay-card h3,
+.impact-card h3,
+.feature-body h3,
+.artifact-header h3,
+.timeline-item h3,
+.brand-title,
+.hero-copy h1,
+.section-heading h2,
+.panel-stat strong {
+  color: #ffffff;
 }
 
 .feature-cards {
@@ -388,7 +400,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
-  color: var(--accent-3);
+  color: #ffe09d;
 }
 
 .feature-body h3,
@@ -419,7 +431,7 @@ a {
 .timeline-year {
   display: inline-flex;
   align-items: start;
-  color: var(--accent-3);
+  color: #ffe09d;
 }
 
 .timeline-item p {
@@ -446,12 +458,12 @@ a {
 }
 
 .artifact-header span {
-  color: var(--accent-3);
+  color: #ffe09d;
 }
 
 .artifact-tagline {
   margin: 0.25rem 0 0;
-  color: var(--text);
+  color: #f8fbff;
 }
 
 .artifact-points {
@@ -478,7 +490,7 @@ a {
 }
 
 .site-footer a {
-  color: var(--accent-3);
+  color: #ffe09d;
 }
 
 .accent-supra { --card-accent: var(--accent-supra); }
@@ -509,7 +521,7 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 0.75rem;
-  background: rgba(5, 8, 11, 0.9);
+  background: rgba(3, 6, 10, 0.94);
   z-index: 20;
   padding: 2rem;
 }
