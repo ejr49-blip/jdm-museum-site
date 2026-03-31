@@ -99,3 +99,9 @@ To replace the SVG placeholders with your own images:
 3. Update the README or page copy to credit image sources where required.
 
 If you'd like, I can add an `assets/` folder and wire example images into the gallery next.
+
+## Image attributions
+- Image files are in the `assets/` folder. Detailed source links are in `assets/attributions.md`.
+
+## Presentation slides (PDF)
+- A printable slide deck is included at `slides.html`. To create a PDF for class, open `slides.html` in your browser and use Print → Save as PDF (choose paper size and layout as needed).

@@ -397,3 +397,48 @@ body {
     padding: 1.5rem 0 3rem;
   }
 }
+
+/* Lightbox and artifact image styles */
+.artifact-image {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+  height: 120px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.88);
+  z-index: 1200;
+  padding: 2rem;
+}
+.lightbox.active { display: flex; }
+.lightbox .lb-image {
+  max-width: 92%;
+  max-height: 82%;
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.7);
+}
+.lightbox .lb-credit {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+.lightbox .lb-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.lightbox-trigger { cursor: zoom-in; display: inline-block; }
+.lightbox-trigger:focus { outline: 2px solid var(--accent); outline-offset: 3px; }
