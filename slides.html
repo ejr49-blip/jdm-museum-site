@@ -1,72 +1,139 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>90s JDM Museum — Presentation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>90s JDM Museum Presentation</title>
   <style>
-    body { font-family: Inter, system-ui, sans-serif; color:#111; background: #fff; }
-    .slide { width: 960px; margin: 40px auto; padding: 48px; box-sizing: border-box; min-height: 640px; border: 1px solid #e6e6e6; }
-    h1 { font-size: 2.2rem; margin: 0 0 12px; }
-    h2 { font-size: 1.4rem; margin: 0 0 8px; }
-    ul { margin: 8px 0 0 1.25rem; }
-    .note { color:#444; margin-top: 18px; }
-    @media print { .slide { page-break-after: always; border: none; } }
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #f4efe5;
+      --ink: #18212b;
+      --muted: #5b6772;
+      --accent: #d96b3b;
+      --accent-soft: #9db8ac;
+      --panel: #fffaf1;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #efe8db 0%, #f8f4ec 100%);
+      color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .slide {
+      width: 1000px;
+      min-height: 640px;
+      margin: 36px auto;
+      padding: 56px;
+      background: var(--panel);
+      border-radius: 24px;
+      box-shadow: 0 18px 50px rgba(24, 33, 43, 0.12);
+      border-top: 8px solid var(--accent);
+    }
+    h1, h2 {
+      font-family: 'Cormorant Garamond', serif;
+      margin: 0;
+      line-height: 0.95;
+    }
+    h1 { font-size: 4rem; max-width: 10ch; }
+    h2 { font-size: 2.6rem; margin-bottom: 1rem; }
+    p, li { font-size: 1.08rem; line-height: 1.6; color: var(--muted); }
+    ul { margin: 0; padding-left: 1.25rem; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.78rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .card {
+      border: 1px solid rgba(24, 33, 43, 0.1);
+      border-radius: 18px;
+      padding: 20px;
+      background: rgba(157, 184, 172, 0.08);
+    }
+    @media print {
+      body { background: white; }
+      .slide { page-break-after: always; box-shadow: none; }
+    }
   </style>
 </head>
 <body>
   <section class="slide">
+    <p class="eyebrow">Presentation overview</p>
     <h1>90s JDM Museum</h1>
-    <h2>Curated exhibition of Toyota Supra, Nissan Skyline GT-R, Mazda RX-7, Honda NSX</h2>
-    <p class="note">5-minute presentation — focus on concept, design style, persuasion, archetype, AI workflow.</p>
+    <p>This project turns the history of 1990s Japanese performance cars into a museum-style website focused on engineering innovation, motorsport influence, tuning culture, and long-term industry change.</p>
   </section>
 
   <section class="slide">
-    <h2>Concept</h2>
+    <p class="eyebrow">Core idea</p>
+    <h2>Main thesis</h2>
+    <div class="grid">
+      <div class="card">
+        <p>These cars mattered because they combined speed with durability, making performance feel attainable and trustworthy.</p>
+      </div>
+      <div class="card">
+        <p>They also became global symbols through media, games, film, and enthusiast communities, which gave them cultural power far beyond Japan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Artifact focus</p>
+    <h2>Featured vehicles</h2>
     <ul>
-      <li>Museum-style narrative for 90s JDM sports cars</li>
-      <li>Explain engineering, culture, media influence, and legacy</li>
-      <li>Audience: car enthusiasts and general viewers</li>
+      <li>Toyota Supra A80</li>
+      <li>Nissan Skyline GT-R R34</li>
+      <li>Mazda RX-7 FD</li>
+      <li>Honda NSX</li>
+      <li>Subaru Impreza WRX</li>
+      <li>Mitsubishi Lancer Evolution</li>
+      <li>Nissan 300ZX</li>
+      <li>Toyota AE86</li>
     </ul>
   </section>
 
   <section class="slide">
-    <h2>Design & Persuasion</h2>
+    <p class="eyebrow">Why it stands out</p>
+    <h2>Design approach</h2>
+    <div class="grid">
+      <div class="card">
+        <p>Editorial museum look using a warm palette, serif display typography, glass-like panels, and large photographic treatments.</p>
+      </div>
+      <div class="card">
+        <p>Content is organized as exhibit labels, curatorial essays, timelines, and artifact entries instead of a generic school-project layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Historical content</p>
+    <h2>Automotive industry impact</h2>
     <ul>
-      <li>Design style: Swiss Bauhaus — clarity, grid, typography</li>
-      <li>Cialdini: Authority — curator voice, labels, expert framing</li>
-      <li>Brand Archetype: The Explorer — curiosity and discovery</li>
+      <li>Made reliability part of the performance conversation</li>
+      <li>Elevated tuning potential into a marketable value</li>
+      <li>Legitimized advanced AWD and electronics</li>
+      <li>Made Japanese design and engineering aspirational on a global scale</li>
     </ul>
   </section>
 
   <section class="slide">
-    <h2>Highlights</h2>
+    <p class="eyebrow">Build summary</p>
+    <h2>What changed in the site</h2>
     <ul>
-      <li>Toyota Supra Mk4 — twin-turbo legend</li>
-      <li>Nissan Skyline GT-R R34 — AWD, RB26</li>
-      <li>Mazda RX-7 FD — rotary, balance</li>
-      <li>Honda NSX — mid-engine precision</li>
+      <li>Rewrote the homepage and archive for clearer museum-style information architecture</li>
+      <li>Introduced a stronger visual system and responsive layout</li>
+      <li>Expanded the writing so each section explains why the cars mattered historically</li>
+      <li>Used higher-resolution car images with source attribution and lightbox viewing</li>
     </ul>
   </section>
-
-  <section class="slide">
-    <h2>Workflow & AI</h2>
-    <ul>
-      <li>Spec → QA → Sprint → Implement → Review</li>
-      <li>Used AI to draft structure, write content, implement visuals</li>
-      <li>Presented curator-style QA to improve narrative flow</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h2>Curator Feedback & Next Steps</h2>
-    <ul>
-      <li>Improve artifact captions and source quotes</li>
-      <li>Add interactive timeline and media page</li>
-      <li>Polish visuals, add more curated images and attributions</li>
-    </ul>
-  </section>
-
-  <p style="text-align:center; color:#666; font-size:0.9rem;">To create a PDF: open this file in a browser and Print → Save as PDF (select A4 or Letter, landscape optional).</p>
 </body>
 </html>

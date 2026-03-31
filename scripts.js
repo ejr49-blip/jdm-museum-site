@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const lbCredit = lb.querySelector('.lb-credit');
   const lbClose = lb.querySelector('.lb-close');
 
+  const closeLightbox = () => {
+    lb.classList.remove('active');
+    lbImage.removeAttribute('src');
+  };
+
   document.addEventListener('click', (e) => {
     const a = e.target.closest && e.target.closest('a.lightbox-trigger');
     if (a) {
@@ -36,12 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     if (e.target === lb || e.target === lbClose) {
-      lb.classList.remove('active');
+      closeLightbox();
     }
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') lb.classList.remove('active');
+    if (e.key === 'Escape') closeLightbox();
   });
 });
 

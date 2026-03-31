@@ -3,416 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>90s JDM Museum</title>
-  <meta name="description" content="A museum-style exhibition of 1990s JDM sports cars, exploring their engineering, culture, and lasting legacy.">
+  <title>90s JDM Museum | Engineering, Culture, and Industry Change</title>
+  <meta name="description" content="An editorial museum-style website about 1990s JDM cars and the way they changed engineering, tuning culture, motorsport, and the global automotive industry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
   <div class="page-shell">
-    <header class="site-header">
-      <div>
-        <p class="eyebrow">Curated automotive exhibition</p>
-        <h1>90s JDM Museum</h1>
-        <p class="hero-copy">A Swiss Bauhaus-inspired gallery for the era when Toyota, Nissan, Mazda, and Honda built performance cars that rewrote the meaning of a street car.</p>
-      </div>
-      <nav>
+    <header class="site-header reveal">
+      <a class="brand-mark" href="index.html">
+        <span class="brand-kicker">Digital Exhibition</span>
+        <span class="brand-title">90s JDM Museum</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="gallery.html">Artifacts</a>
+        <a href="gallery.html">Archive</a>
         <a href="#timeline">Timeline</a>
-        <a href="#process">Process</a>
+        <a href="#industry">Impact</a>
+        <a href="#sources">Sources</a>
       </nav>
     </header>
 
-    <section class="hero-panel reveal" id="exhibit">
-      <div class="hero-copy-panel">
-        <span class="label">Exhibition Theme</span>
-        <h2>Engineering, culture, and media shaped by 90s Japanese performance cars.</h2>
-        <p>This exhibition presents the Toyota Supra, Nissan Skyline GT-R, Mazda RX-7, and Honda NSX as museum artifacts. It explains why they became global icons, how factory innovation and street culture intersected, and why the story still matters today.</p>
-        <a class="button-link" href="gallery.html">Explore the artifact archive</a>
-      </div>
-      <div class="hero-meta">
-        <div class="meta-card">
-          <strong>Design Style</strong>
-          <p>Swiss Bauhaus — clean grids, bold typography, structured spacing and modern minimalism.</p>
-        </div>
-        <div class="meta-card">
-          <strong>Cialdini Principle</strong>
-          <p>Authority — the exhibit is narrated as a curator-led museum experience that builds trust and interest.</p>
-        </div>
-        <div class="meta-card">
-          <strong>Brand Archetype</strong>
-          <p>The Explorer — curiosity, discovery, and the thrill of uncovering automotive legends.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block reveal" id="story">
-      <div class="section-heading">
-        <span class="label">Curatorial Narrative</span>
-        <h2>Why 90s JDM cars deserve a museum exhibition.</h2>
-      </div>
-      <div class="story-grid">
-        <article>
-          <h3>🏗️ Engineering as Art</h3>
-          <p>These cars were engineered to do more than go fast. The 2JZ-GTE's 2.0L displacement delivered 320 hp with twin-turbos. The RB26DETT achieved 276 hp with advanced fuel injection. The rotary delivered 280 hp from 1.3L. The NSX's VTEC reached 290 hp naturally aspirated. Each represented the pinnacle of efficiency, response, and reliability.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Key insight:</strong> These powerplants defined high-revving, scalable performance. Tuners achieved 500+ hp with modest modifications, proving Japanese engineering's precision and headroom.</p>
-        </article>
-        <article>
-          <h3>🎨 Culture in Motion</h3>
-          <p>The JDM era created global communities around tuning, craftsmanship, and automotive passion. Street racing networks, aftermarket shops, and DIY enthusiasts elevated cars into shared language. Coverage in magazines like Option and Import Tuner elevated these platforms from appliances to art.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Key insight:</strong> Factory support for tuning (OEM parts, limited editions) created a rare alignment where OEMs and grassroots communities shared the same vision.</p>
-        </article>
-        <article>
-          <h3>🎬 Media and Myth</h3>
-          <p>Movies, video games, and magazines didn't just promote these cars—they canonized them. The Supra became synonymous with street racing. The Skyline was the simulation legend. The RX-7 inspired designers. The NSX proved Japanese supercars. Each became a symbol beyond mechanics.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Key insight:</strong> Cultural ubiquity made these cars aspirational to non-car people. A generation bought these cars because movies, anime, and games made them matter.</p>
-        </article>
-        <article>
-          <h3>🔮 Legacy Today</h3>
-          <p>The same traits that made these cars rare in the 90s—advanced tech, raw performance, distinctive design—are why they command six-figure prices today (for clean examples). Parts prices have tripled. Factory documentation is treasured. Specialist shops exist solely to restore and maintain them.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Key insight:</strong> Scarcity + nostalgia + proven engineering = collector cars. These are not curiosities; they are recognized milestones in automotive history.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block strong-panel reveal" id="gallery">
-      <div class="section-heading">
-        <span class="label">Featured Gallery</span>
-        <h2>Four iconic JDM cars that shaped the era.</h2>
-      </div>
-      <div class="car-grid">
-        <article class="car-card reveal accent-supra">
-          <a class="lightbox-trigger" href="assets/supra_1995.jpg" data-credit="See assets/attributions.md for source" data-alt="Toyota Supra Mk4 (1995)">
-            <img class="artifact-image" src="assets/supra_1995.jpg" alt="Toyota Supra Mk4 (1995)">
-          </a>
-          <p class="img-credit">Photo: <a href="https://en.wikipedia.org/wiki/File:The_interior_of_Toyota_Supra_RZ_mid-year_1995.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
-          <div class="car-card-header">
-            <span>1998</span>
-            <h3>Toyota Supra Mk4</h3>
+    <main>
+      <section class="hero reveal" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Curated exhibition on Japanese performance history</p>
+          <h1>How 1990s JDM cars reshaped performance, culture, and the way the world judged engineering.</h1>
+          <p class="hero-text">This site treats the great 90s Japanese performance machines as museum artifacts, not just fast cars. The Supra, Skyline GT-R, RX-7, NSX, WRX, Evolution, 300ZX, and AE86 turned reliability into a performance advantage, pushed motorsport technology into street cars, and helped Japanese brands change the global automotive hierarchy.</p>
+          <div class="hero-actions">
+            <a class="button-link" href="gallery.html">Enter the archive</a>
+            <a class="text-link" href="#story">Read the curatorial essay</a>
           </div>
-          <p>Legendary twin-turbo straight-six power, widebody presence, and a cult following through street racing and film. The Supra symbolizes performance dreams made real.</p>
-          <div style="display:grid;gap:0.5rem;font-size:0.85rem;color:var(--muted);margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border)">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span><strong style="color:#ff6b6b">⚙️ Engine:</strong> 3.0L 2JZ-GTE twin-turbo I6</span>
-              <span style="background:rgba(255,107,107,0.2);color:#ff6b6b;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.75rem;font-weight:700">320 HP</span>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-stat">
+            <span class="stat-label">Exhibit focus</span>
+            <strong>8 defining cars</strong>
+            <p>Selected to show engineering, racing, design, and cultural crossover.</p>
+          </div>
+          <div class="panel-stat">
+            <span class="stat-label">Core thesis</span>
+            <strong>Performance became dependable</strong>
+            <p>Japanese manufacturers proved speed did not need to come with fragility.</p>
+          </div>
+          <div class="panel-stat">
+            <span class="stat-label">Lasting effect</span>
+            <strong>Collector values and design language still trace back here</strong>
+            <p>Modern enthusiast cars, from the GR Supra to the GR86, still reference this decade.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-grid reveal" id="story">
+        <div class="section-heading">
+          <p class="eyebrow">Curatorial essay</p>
+          <h2>Why the 1990s JDM era matters beyond nostalgia.</h2>
+        </div>
+        <div class="essay-grid">
+          <article class="essay-card">
+            <h3>Engineering discipline became a cultural force</h3>
+            <p>By the 1990s, Toyota, Nissan, Honda, Mazda, Subaru, and Mitsubishi were no longer trying to imitate European performance brands. They were defining their own standards. Engines like the 2JZ-GTE, RB26DETT, and EJ20 showed that careful manufacturing tolerances, strong internals, and smart turbocharging could deliver repeatable speed and huge tuning headroom.</p>
+          </article>
+          <article class="essay-card">
+            <h3>Motorsport stopped being separate from the showroom</h3>
+            <p>The decade linked racing and road cars more tightly than many buyers had ever seen. Group A touring car success fed the Skyline GT-R story. World Rally Championship competition accelerated the evolution of the WRX and Lancer Evolution. Honda transferred Formula One thinking into the NSX. The result was a new consumer expectation: technology that wins races should reach production cars quickly.</p>
+          </article>
+          <article class="essay-card">
+            <h3>Media made these cars global symbols</h3>
+            <p>Magazines, VHS tuning tapes, anime, video games, and later films transformed JDM icons into shared global references. Gran Turismo taught players the names of Japanese drivetrains and trim levels. Initial D made the AE86 a hero. The Fast and the Furious turned the Supra into a mainstream cultural object. These cars became recognizable even to people with little technical knowledge.</p>
+          </article>
+          <article class="essay-card">
+            <h3>The industry had to answer Japan's challenge</h3>
+            <p>European and American brands could not ignore the shift. Japanese cars were quicker to trust electronically managed AWD, more willing to chase lightweight efficiency, and better at building performance cars that owners could actually live with. In practical terms, the 1990s JDM era helped normalize today's expectations for reliability, daily usability, and technology-rich performance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-grid feature-section reveal" id="featured">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Featured artifacts</p>
+            <h2>Four flagship cars that defined the decade's mythology.</h2>
+          </div>
+          <a class="text-link" href="gallery.html">See all eight artifacts</a>
+        </div>
+
+        <div class="feature-cards">
+          <article class="feature-card accent-supra">
+            <a class="lightbox-trigger media-frame" href="assets/supra_1995.jpg" data-credit="Photo source listed in assets/attributions.md" data-alt="Toyota Supra Mk4">
+              <img src="assets/supra_1995.jpg" alt="Toyota Supra Mk4">
+            </a>
+            <div class="feature-body">
+              <div class="feature-meta"><span>1993-2002</span><span>320 hp (US twin-turbo)</span></div>
+              <h3>Toyota Supra A80</h3>
+              <p>The Supra became the benchmark for overbuilt turbocharged tuning potential. Its 2JZ-GTE engine gave enthusiasts a platform that tolerated power increases with unusual confidence, and its later film exposure turned it into the public face of JDM performance.</p>
             </div>
-            <div><strong style="color:#ff6b6b">⚡ Performance:</strong> 4.6 sec 0–60 | 155+ mph top speed</div>
-            <div><strong style="color:#ff6b6b">🔧 Tech:</strong> Twin sequential turbos, intercooled, direct fuel injection</div>
-          </div>
-        </article>
-        <article class="car-card reveal accent-skyline">
-          <a class="lightbox-trigger" href="assets/skyline.jpg" data-credit="See assets/attributions.md for source" data-alt="Nissan Skyline GT-R R34">
-            <img class="artifact-image" src="assets/skyline.jpg" alt="Nissan Skyline GT-R R34">
-          </a>
-          <p class="img-credit">Photo: <a href="https://en.wikipedia.org/wiki/File:Nissan_Skyline_GT-R_R34_V_Spec_II.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
-          <div class="car-card-header">
-            <span>1999</span>
-            <h3>Nissan Skyline GT-R R34</h3>
-          </div>
-          <p>Advanced AWD systems and a high-revving RB26 engine made the R34 a technical masterclass. It stands for precision, speed, and technological ambition.</p>
-          <div style="display:grid;gap:0.5rem;font-size:0.85rem;color:var(--muted);margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border)">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span><strong style="color:#4fd1c5">⚙️ Engine:</strong> 2.6L RB26DETT twin-turbo I6</span>
-              <span style="background:rgba(79,209,197,0.2);color:#4fd1c5;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.75rem;font-weight:700">276 HP (JPN)</span>
+          </article>
+
+          <article class="feature-card accent-skyline">
+            <a class="lightbox-trigger media-frame" href="assets/skyline.jpg" data-credit="Photo source listed in assets/attributions.md" data-alt="Nissan Skyline GT-R R34">
+              <img src="assets/skyline.jpg" alt="Nissan Skyline GT-R R34">
+            </a>
+            <div class="feature-body">
+              <div class="feature-meta"><span>1999-2002</span><span>RB26DETT + ATTESA E-TS</span></div>
+              <h3>Nissan Skyline GT-R R34</h3>
+              <p>The GT-R represented computational performance before that idea became common. AWD management, digital displays, and race-proven chassis tuning made it feel advanced in a way that shaped the modern image of a technology-led performance car.</p>
             </div>
-            <div><strong style="color:#4fd1c5">⚡ Performance:</strong> 4.7 sec 0–60 | 165+ mph top speed</div>
-            <div><strong style="color:#4fd1c5">🔧 Tech:</strong> ATTESA E-TS AWD, electronic torque vectoring, 4-wheel steering</div>
-          </div>
-        </article>
-        <article class="car-card reveal accent-rx7">
-          <a class="lightbox-trigger" href="assets/rx7.jpg" data-credit="See assets/attributions.md for source" data-alt="Mazda RX-7 FD">
-            <img class="artifact-image" src="assets/rx7.jpg" alt="Mazda RX-7 FD">
-          </a>
-          <p class="img-credit">Photo: <a href="https://en.wikipedia.org/wiki/File:Mazda_RX-7_SPIRIT_R_Type_A_(GF-FD3S)_(10).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
-          <div class="car-card-header">
-            <span>1995</span>
-            <h3>Mazda RX-7 FD</h3>
-          </div>
-          <p>Lightweight balance, a rotary heart, and a sculpted silhouette made the RX-7 feel like a machine built for the driver. It is the embodiment of engineering elegance.</p>
-          <div style="display:grid;gap:0.5rem;font-size:0.85rem;color:var(--muted);margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border)">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span><strong style="color:#f7c948">⚙️ Engine:</strong> 1.3L dual-rotor rotary twin-turbo</span>
-              <span style="background:rgba(247,201,72,0.2);color:#f7c948;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.75rem;font-weight:700">280 HP</span>
+          </article>
+
+          <article class="feature-card accent-rx7">
+            <a class="lightbox-trigger media-frame" href="assets/rx7.jpg" data-credit="Photo source listed in assets/attributions.md" data-alt="Mazda RX-7 FD">
+              <img src="assets/rx7.jpg" alt="Mazda RX-7 FD">
+            </a>
+            <div class="feature-body">
+              <div class="feature-meta"><span>1992-2002</span><span>Sequential twin-turbo rotary</span></div>
+              <h3>Mazda RX-7 FD</h3>
+              <p>The RX-7 embodied Japanese risk-taking. Mazda persisted with the rotary engine and wrapped it in one of the decade's most elegant shapes, proving that lightweight balance and emotional design could matter as much as raw displacement.</p>
             </div>
-            <div><strong style="color:#f7c948">⚡ Performance:</strong> 4.7 sec 0–60 | 161 mph top speed</div>
-            <div><strong style="color:#f7c948">🔧 Tech:</strong> 50/50 weight balance, lightweight chassis, unique rotary character</div>
-          </div>
-        </article>
-        <article class="car-card reveal accent-nsx">
-          <a class="lightbox-trigger" href="assets/nsx.jpg" data-credit="See assets/attributions.md for source" data-alt="Honda NSX">
-            <img class="artifact-image" src="assets/nsx.jpg" alt="Honda NSX">
-          </a>
-          <p class="img-credit">Photo: <a href="https://en.wikipedia.org/wiki/File:AcuraNSX-05-cropped.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
-          <div class="car-card-header">
-            <span>1991</span>
-            <h3>Honda NSX</h3>
-          </div>
-          <p>The NSX brought race-car technology to the street with a mid-engine V6 and aluminum body. It reframed sports cars as precise, usable, and modern.</p>
-          <div style="display:grid;gap:0.5rem;font-size:0.85rem;color:var(--muted);margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border)">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span><strong style="color:#8aa0ff">⚙️ Engine:</strong> 3.0L VTEC V6 naturally aspirated</span>
-              <span style="background:rgba(138,160,255,0.2);color:#8aa0ff;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.75rem;font-weight:700">290 HP</span>
+          </article>
+
+          <article class="feature-card accent-nsx">
+            <a class="lightbox-trigger media-frame" href="assets/nsx.jpg" data-credit="Photo source listed in assets/attributions.md" data-alt="Honda NSX">
+              <img src="assets/nsx.jpg" alt="Honda NSX">
+            </a>
+            <div class="feature-body">
+              <div class="feature-meta"><span>1990-2005</span><span>Aluminum monocoque + VTEC</span></div>
+              <h3>Honda NSX</h3>
+              <p>The NSX challenged the supercar formula by pairing high standards of usability with race-bred thinking. It showed that an exotic car could be precise, reliable, comfortable, and still taken seriously by the world's best drivers and engineers.</p>
             </div>
-            <div><strong style="color:#8aa0ff">⚡ Performance:</strong> 4.5 sec 0–60 | 161 mph top speed</div>
-            <div><strong style="color:#8aa0ff">🔧 Tech:</strong> Mid-engine layout, aluminum monocoque, F1-derived VTEC</div>
-          </div>
-        </article>
-      </div>
-      <p class="section-note">Want deeper context? Visit the artifact archive for curator notes on each iconic car.</p>
-    </section>
+          </article>
+        </div>
+      </section>
 
-    <section class="section-block reveal" id="racing">
-      <div class="section-heading">
-        <span class="label">Racing & Motorsport</span>
-        <h2>How competition drove technology into street cars.</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem">
-        <div style="padding:1.25rem;background:rgba(255,140,66,0.1);border-left:3px solid #ff8c42;border-radius:6px">
-          <div style="font-weight:700;color:#ff8c42;font-size:0.85rem">RALLY WINS</div>
-          <div style="font-size:2rem;font-weight:900;color:#ff6b6b;margin:0.5rem 0">28+</div>
-          <div style="font-size:0.75rem;color:var(--muted)">WRC Events 1995–99</div>
+      <section class="section-grid reveal" id="industry">
+        <div class="section-heading">
+          <p class="eyebrow">Industry transformation</p>
+          <h2>Four ways 90s JDM cars changed the automotive industry.</h2>
         </div>
-        <div style="padding:1.25rem;background:rgba(79,209,197,0.1);border-left:3px solid #4fd1c5;border-radius:6px">
-          <div style="font-weight:700;color:#4fd1c5;font-size:0.85rem">HOMOLOG MODELS</div>
-          <div style="font-size:2rem;font-weight:900;color:#4fd1c5;margin:0.5rem 0">12</div>
-          <div style="font-size:0.75rem;color:var(--muted)">Race-Edition Cars</div>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <h3>Reliability became part of performance</h3>
+            <p>Before this era, many buyers assumed that serious speed meant temperamental ownership. Japanese performance cars changed that belief. Durable engines, accessible maintenance, and long-term mechanical consistency made performance ownership feel less exclusive and less risky.</p>
+          </article>
+          <article class="impact-card">
+            <h3>Tuning moved from fringe hobby to market signal</h3>
+            <p>Manufacturers learned that enthusiasts did not merely want stock performance. They wanted platforms that rewarded modification. That lesson later shaped factory performance sub-brands, OEM accessories, track packages, and the way companies now market engines and drivetrains to enthusiast communities.</p>
+          </article>
+          <article class="impact-card">
+            <h3>Electronics and AWD gained prestige</h3>
+            <p>The Skyline GT-R, WRX, and Evolution helped legitimize electronically managed traction systems as performance tools rather than compromises. Today's sophisticated AWD performance cars owe a clear debt to 1990s Japanese experimentation in torque control and chassis management.</p>
+          </article>
+          <article class="impact-card">
+            <h3>Japanese design became aspirational</h3>
+            <p>These cars changed how global audiences viewed Japanese industrial design. Instead of being seen primarily as practical and economical, Japanese cars became associated with sculpted forms, cockpit-focused interiors, motorsport seriousness, and collectible status.</p>
+          </article>
         </div>
-        <div style="padding:1.25rem;background:rgba(247,201,72,0.1);border-left:3px solid #f7c948;border-radius:6px">
-          <div style="font-weight:700;color:#f7c948;font-size:0.85rem">ENGINE CONFIGS</div>
-          <div style="font-size:2rem;font-weight:900;color:#f7c948;margin:0.5rem 0">8+</div>
-          <div style="font-size:0.75rem;color:var(--muted)">Turbo Variants</div>
-        </div>
-        <div style="padding:1.25rem;background:rgba(138,160,255,0.1);border-left:3px solid #8aa0ff;border-radius:6px">
-          <div style="font-weight:700;color:#8aa0ff;font-size:0.85rem">HP PROGRESSION</div>
-          <div style="font-size:2rem;font-weight:900;color:#8aa0ff;margin:0.5rem 0">+50%</div>
-          <div style="font-size:0.75rem;color:var(--muted)">Per Decade</div>
-        </div>
-      </div>
-      <div class="story-grid">
-        <article>
-          <h3>⚡ Rally Heritage: Subaru & Mitsubishi</h3>
-          <p><strong>World Rally Championship dominance (1995–1999):</strong> Subaru's Impreza WRX and Mitsubishi's Lancer Evolution locked in an epic rivalry that drove relentless innovation. Colin McRae's legendary 555 Subaru and Tommi Mäkinen's Evo victories proved AWD technology's performance ceiling. Every twelve months, new iterations pushed further: active center diffs, sequential turbos, lighter materials.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Direct road-car carryover:</strong> Symmetrical AWD, boxer engine architecture, and rally-hardened suspensions appeared immediately in production models. WRC success legitimized the technology in mainstream minds.</p>
-        </article>
-        <article>
-          <h3>🏁 Circuit Engineering: Nissan & Honda</h3>
-          <p><strong>Group A and touring car lineage:</strong> The Skyline GT-R's ATTESA E-TS AWD system was battle-tested in touring car competitions before road deployment. Nissan's electronic control of torque distribution proved itself at race pace before appearing on customer cars. Honda's F1 DNA flowed directly: VTEC variable valve timing gave the NSX a screaming 8,000 rpm capability and near-exotic performance from a naturally aspirated V6.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Direct road-car carryover:</strong> Every major system (engine, transmission, suspension) carried race credentials. Buyers were essentially purchasing "race car technology made street-legal."</p>
-        </article>
-        <article>
-          <h3>🔧 Homologation: Building Street Legends</h3>
-          <p><strong>Factory race editions:</strong> To compete in Group A, manufacturers built 500-unit homologation specials with extreme modifications. The Impreza 555 Limited, the Lancer Evolution VI RS, the Skyline GT-R Black Mask, the NSX-R. These weren't cosmetic variants—they were genuine race cars with stripped interiors, reinforced frames, advanced electronics, and factory documentation proving competition provenance.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Collector premium:</strong> Original homologation cars now command 200%+ premiums over regular models. They are physical proof of factory intent and racing engineering.</p>
-        </article>
-        <article>
-          <h3>🌙 Drift Culture & Feedback Loop</h3>
-          <p><strong>Mountain road to organized event:</strong> Japanese drifting—born on expressway ramps and mountain passes—created cultural demand for oversteering-capable, balanced chassis cars. Events like Drift Matsuri and later D1 Grand Prix elevated it to professional sport. Manufacturers responded by releasing drift-specific variants, supporting teams, and engineering for predictable power delivery at extreme slip angles.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Factory support:</strong> OEMs released drift editions (limited power, tuning-friendly software) and sponsored teams. This bidirectional feedback loop—customer demand → factory response → future models—created a rare alignment of interests.</p>
-        </article>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-block reveal" id="media">
-      <div class="section-heading">
-        <span class="label">Media & Pop Culture</span>
-        <h2>How movies, games, and magazines transformed JDM cars into global legends.</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:2rem">
-        <div style="padding:1.5rem;background:linear-gradient(135deg,rgba(79,209,197,0.1),rgba(138,160,255,0.05));border-radius:8px;border-left:4px solid #4fd1c5">
-          <div style="font-weight:700;font-size:1.1rem;color:#4fd1c5;margin-bottom:0.5rem">📺 Media Timeline</div>
-          <div style="font-size:0.85rem;color:var(--muted);line-height:1.8">
-            <div>✦ 1997: Gran Turismo launches (PS1)</div>
-            <div>✦ 2001: Fast & Furious film (Supra fame)</div>
-            <div>✦ 2004–ongoing: Initial D anime boom</div>
-            <div>✦ 2013+: YouTube tuning culture explodes</div>
-          </div>
+      <section class="section-grid timeline-section reveal" id="timeline">
+        <div class="section-heading">
+          <p class="eyebrow">Historical timeline</p>
+          <h2>A compact timeline of the era's most important shifts.</h2>
         </div>
-        <div style="padding:1.5rem;background:linear-gradient(135deg,rgba(255,107,107,0.1),rgba(255,140,66,0.05));border-radius:8px;border-left:4px solid #ff6b6b">
-          <div style="font-weight:700;font-size:1.1rem;color:#ff6b6b;margin-bottom:0.5rem">💰 Market Impact</div>
-          <div style="font-size:0.85rem;color:var(--muted);line-height:1.8">
-            <div>✦ A80 Supra: +300% post-2001</div>
-            <div>✦ R34 Skyline: Cult collectible status</div>
-            <div>✦ AE86/RX-7: Specialty market premiums</div>
-            <div>✦ Combined: $500M+ annual market</div>
-          </div>
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <span class="timeline-year">1990</span>
+            <div>
+              <h3>Honda launches the NSX</h3>
+              <p>The NSX proves Japan can build a credible exotic sports car with race-bred technology and daily usability.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">1992</span>
+            <div>
+              <h3>Mazda refines the FD RX-7</h3>
+              <p>The lightweight rotary coupe becomes a landmark in Japanese sports-car styling and balance-focused engineering.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">1994-1996</span>
+            <div>
+              <h3>WRX and Evolution rivalry escalates</h3>
+              <p>World Rally Championship success turns AWD turbo sedans into aspirational enthusiast machines.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">1997</span>
+            <div>
+              <h3>Gran Turismo spreads JDM literacy worldwide</h3>
+              <p>Players begin learning Japanese model codes, tuning logic, drivetrain differences, and performance culture through simulation.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">1999</span>
+            <div>
+              <h3>The R34 GT-R becomes a technological icon</h3>
+              <p>Nissan's halo car compresses motorsport credibility, electronics, and collector desire into one platform.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2001+</span>
+            <div>
+              <h3>Film and internet culture create a second life</h3>
+              <p>JDM cars move from enthusiast culture into mainstream global mythology, accelerating collector demand and media visibility.</p>
+            </div>
+          </article>
         </div>
-      </div>
-      <div class="story-grid">
-        <article>
-          <h3>🎬 <em>Fast &amp; Furious</em> (2001) Effect</h3>
-          <p><strong>Cultural inflection point:</strong> The orange 1995 Toyota Supra's role in the original film (driven by Paul Walker's Brian O'Conner) transcended car culture into mainstream consciousness. The film's street racing aesthetic—neon underglow, wide body kits, turbocharged engines—made JDM tuning desirable to teenagers globally. Subsequent films elevated the franchise into a $6B+ empire co-starring multiple JDM icons.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Market impact:</strong> A80 Supra prices jumped 300%+ post-2001. The franchise continues (11+ films) with JDM cars as action heroes, making them household names beyond auto enthusiasts.</p>
-        </article>
-        <article>
-          <h3>🎮 Gran Turismo &amp; Gaming</h3>
-          <p><strong>Simulation legitimacy:</strong> PlayStation's Gran Turismo (1997+) made detailed vehicle tuning and performance comparison accessible to millions. Players could modify Skylines, Supras, RX-7s, and NSX models side-by-side, learning about turbocharging, suspension, gearing, and aerodynamics without owning a car. The simulation's accuracy earned respect from real engineers; its accessibility made JDM tuning culture aspirational to a generation.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Market expansion:</strong> Games like Gran Turismo, Need for Speed, and Forza made Japanese cars competitive with Ferraris and Porsches in virtual space first—reshaping real sales preferences. Players grew up respecting JDM performance.</p>
-        </article>
-        <article>
-          <h3>📺 Magazines, Anime & Hip-Hop</h3>
-          <p><strong>Multimedia cross-pollination:</strong> Japanese magazines like Option and Best Motoring documented tuning culture with editorial legitimacy. Import Tuner (US) brought that aesthetic to North America. Initial D anime elevated the AE86 from forgotten economy car to drift legend. Hip-hop and streetwear absorbed JDM aesthetics—brands like Stüssy and Supreme featured Supra imagery Long before streetwear turned to luxury. This created a self-reinforcing cultural movement.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Cultural osmosis:</strong> Non-car people recognized Supra silhouettes in music videos and fashion magazines. JDM became lifestyle, not just technology.</p>
-        </article>
-        <article>
-          <h3>⭐ Extended Canon: 4 Companions</h3>
-          <p><strong>Secondary legends:</strong> While the core four dominated, the Subaru Impreza WRX (rally champion), Mitsubishi Lancer Evolution (rival warrior), Nissan 300ZX (affordable exotic), and Toyota AE86 (drift patriarch via Initial D) shaped the broader mythology. Each had dedicated enthusiast bases, media presence, and collector followings. Initial D alone introduced the AE86 to millions; McRae made the Impreza a global name; Tommi Mäkinen elevated the Evo to rally royalty.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Canon expansion:</strong> Together, eight cars form a complete narrative of 90s JDM achievement—no single story dominates; instead, a chorus of innovation.</p>
-        </article>
-      </div>
-      <div class="more-icons">
-        <div class="mini-card">
-          <a href="gallery.html#subaru"><img src="assets/subaru_wrx.jpg" class="mini-thumb" alt="Subaru Impreza WRX"></a>
-          <div style="margin-top:0.5rem"><strong>Subaru Impreza WRX</strong><br><span style="font-size:0.8rem;color:var(--muted)">Rally Champion</span></div>
-        </div>
-        <div class="mini-card">
-          <a href="gallery.html#evo"><img src="assets/evo_fix.jpg" class="mini-thumb" alt="Mitsubishi Lancer Evolution"></a>
-          <div style="margin-top:0.5rem"><strong>Mitsubishi Evo</strong><br><span style="font-size:0.8rem;color:var(--muted)">Rally Warrior</span></div>
-        </div>
-        <div class="mini-card">
-          <a href="gallery.html#300zx"><img src="assets/300zx.jpg" class="mini-thumb" alt="Nissan 300ZX"></a>
-          <div style="margin-top:0.5rem"><strong>Nissan 300ZX</strong><br><span style="font-size:0.8rem;color:var(--muted)">Affordable Exotic</span></div>
-        </div>
-        <div class="mini-card">
-          <a href="gallery.html#ae86"><img src="assets/ae86.jpg" class="mini-thumb" alt="Toyota AE86"></a>
-          <div style="margin-top:0.5rem"><strong>Toyota AE86</strong><br><span style="font-size:0.8rem;color:var(--muted)">Drift Legend</span></div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-block reveal" id="timeline">
-      <div class="section-heading">
-        <span class="label">Automotive Revolution</span>
-        <h2>How JDM manufacturers changed the global performance car industry.</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:2.5rem">
-        <div style="padding:1.75rem;background:linear-gradient(135deg,rgba(255,107,107,0.1),rgba(255,140,66,0.05));border-radius:10px;border-top:3px solid #ff6b6b">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem">
-            <h4 style="margin:0;color:#ff6b6b">🏭 Toyota: Reliability Paradigm</h4>
-            <span style="background:rgba(255,107,107,0.2);color:#ff6b6b;padding:0.25rem 0.75rem;border-radius:4px;font-size:0.75rem;font-weight:700">DURABILITY</span>
+      <section class="section-grid reveal" id="sources">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Visual archive</p>
+            <h2>High-resolution photos and source notes.</h2>
           </div>
-          <p style="margin:0;font-size:0.9rem;color:var(--muted);">2JZ engine legend: 500+ hp tuned examples running reliably at 25+ years. Manufacturing precision that influenced global quality standards.</p>
-          <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1)">
-            <div style="font-size:0.8rem;color:var(--muted)">Legacy: Every OEM now pursues Japanese manufacturing discipline</div>
-          </div>
+          <a class="text-link" href="assets/attributions.md">Open attribution list</a>
         </div>
-        <div style="padding:1.75rem;background:linear-gradient(135deg,rgba(79,209,197,0.1),rgba(75,218,181,0.05));border-radius:10px;border-top:3px solid #4fd1c5">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem">
-            <h4 style="margin:0;color:#4fd1c5">🌐 Nissan: AWD Mastery</h4>
-            <span style="background:rgba(79,209,197,0.2);color:#4fd1c5;padding:0.25rem 0.75rem;border-radius:4px;font-size:0.75rem;font-weight:700">ELECTRONICS</span>
-          </div>
-          <p style="margin:0;font-size:0.9rem;color:var(--muted);">ATTESA E-TS system: electronically controlled torque sensing. Nissan's sophistication matched European OEMs with Japanese reliability.</p>
-          <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1)">
-            <div style="font-size:0.8rem;color:var(--muted)">Legacy: Modern AWD benchmark across industry</div>
-          </div>
+        <div class="source-callout">
+          <p>The site now uses higher-resolution images for each featured artifact. Most assets are at least 1280 pixels wide, with the Skyline and RX-7 significantly larger. Clicking any car image opens a full-size lightbox view for closer inspection.</p>
         </div>
-        <div style="padding:1.75rem;background:linear-gradient(135deg,rgba(247,201,72,0.1),rgba(255,191,0,0.05));border-radius:10px;border-top:3px solid #f7c948">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem">
-            <h4 style="margin:0;color:#f7c948">🔄 Mazda: Rotary Courage</h4>
-            <span style="background:rgba(247,201,72,0.2);color:#f7c948;padding:0.25rem 0.75rem;border-radius:4px;font-size:0.75rem;font-weight:700">BRAVERY</span>
-          </div>
-          <p style="margin:0;font-size:0.9rem;color:var(--muted);">RX-7: lightweight, balanced, unconventional. Engineering heroism even when the tech didn't scale—inspired Porsche &amp; Toyota.</p>
-          <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1)">
-            <div style="font-size:0.8rem;color:var(--muted)">Legacy: Respect for bold engineering in automotive circles</div>
-          </div>
-        </div>
-        <div style="padding:1.75rem;background:linear-gradient(135deg,rgba(138,160,255,0.1),rgba(121,114,255,0.05));border-radius:10px;border-top:3px solid #8aa0ff">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem">
-            <h4 style="margin:0;color:#8aa0ff">⚙️ Honda: F1 Process</h4>
-            <span style="background:rgba(138,160,255,0.2);color:#8aa0ff;padding:0.25rem 0.75rem;border-radius:4px;font-size:0.75rem;font-weight:700">PRECISION</span>
-          </div>
-          <p style="margin:0;font-size:0.9rem;color:var(--muted);">NSX: 290 hp naturally aspirated via VTEC. F1 methodology made street-car engineering aspirational industry-wide.</p>
-          <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1)">
-            <div style="font-size:0.8rem;color:var(--muted)">Legacy: Modern playbook for performance engineering</div>
-          </div>
-        </div>
-      </div>
-      
-        <article>
-          <h3>🏭 Toyota: Reliability + Performance Paradigm</h3>
-          <p><strong>The reliability revolution:</strong> Japanese manufacturing's reputation for durability meant Toyota Supras could be tuned to 500+ hp reliably. The 2JZ-GTE's cylinder head design, fuel injection precision, and internal tolerances outmatched American big-blocks for long-term durability. Today, 25-year-old Supras with 500+ hp modifications still operate reliably—proving Japanese process discipline. This shifted global expectations: performance no longer meant fragility.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Industry legacy:</strong> Every major OEM now pursues Japanese-style manufacturing discipline. Toyota's quality standards influenced how the entire industry approaches tolerance and testing.</p>
-        </article>
-        <article>
-          <h3>🌐 Nissan: AWD &amp; Electronic Control Mastery</h3>
-          <p><strong>Technology leadership:</strong> Nissan's Skyline GT-R program perfected all-wheel-drive through a decade of competition. The ATTESA E-TS system (electronically controlled torque-sensing all-wheel-drive) became an engineering benchmark. Nissan's advanced electronics—multi-axis stability control, electronic differentials—proved that Japanese manufacturers understood sophisticated systems as well as German OEMs. The R34's specification sheet made Porsche engineers take notes.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Industry legacy:</strong> Every modern AWD performance car owes conceptual debt to Nissan's 90s innovations. The playbook Audi, Porsche, and Mercedes now follow was written in Japan.</p>
-        </article>
-        <article>
-          <h3>🔄 Mazda: Rotary Courage &amp; Lightweight Philosophy</h3>
-          <p><strong>Engineering bravery:</strong> When every competitor pursued turbo inline-fours or V6s, Mazda doubled down on rotary engines—inherently high-revving, unique, and unproven at modern performance levels. The RX-7 FD proved the concept: lightweight aerospace-grade materials, perfect weight balance, and a screaming engine that rewarded precision driving. Mazda's failure to mainstream rotaries doesn't diminish the achievement—they proved that engineering courage, even if ultimately unsuccessful at scale, earns eternal designer respect.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Industry legacy:</strong> Mazda's commitment to lightweight, balanced chassis influenced Porsche's 911 philosophy and Toyota's later 86/BRZ project. Some technologies fail at scale but achieve immortality through respect.</p>
-        </article>
-        <article>
-          <h3>⚙️ Honda: VTEC &amp; Process Perfection</h3>
-          <p><strong>F1 to street translation:</strong> Honda's F1 heritage meant NSX customers got race-derived VTEC variable valve timing, achieving 290 hp from a naturally aspirated 3.0L V6—an efficiency that humbled larger turbocharged competitors. Honda's process discipline—every component optimized, every tolerance controlled to micron levels—created a car that didn't sacrifice usability for performance. You could drive the NSX to the grocery store and then to the track.</p>
-          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.75rem"><strong>Industry legacy:</strong> Honda's methodology became the 2000s playbook: integrate F1 tech, prioritize efficiency, execute manufacturing precision. Every major OEM now publishes "F1 returns home" messaging because Honda proved it works.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block reveal" id="timeline">
-      <div class="section-heading">
-        <span class="label">90s JDM Timeline</span>
-        <h2>A decade of innovation, competition, and global influence.</h2>
-      </div>
-      <div class="timeline-grid">
-        <article>
-          <span class="timeline-year">1990</span>
-          <h3>Honda NSX debuts</h3>
-          <p>Introduces Honda's race-derived engineering philosophy with a lightweight aluminum body and mid-engine layout.</p>
-        </article>
-        <article>
-          <span class="timeline-year">1995</span>
-          <h3>Mazda RX-7 FD arrives</h3>
-          <p>Refines rotary performance into a balanced sports car celebrated for its agility and compact design.</p>
-        </article>
-        <article>
-          <span class="timeline-year">1998</span>
-          <h3>Toyota Supra Mk4 lands</h3>
-          <p>Becomes a global icon for twin-turbo power and tuning potential, amplified by media and film appearances.</p>
-        </article>
-        <article>
-          <span class="timeline-year">1999</span>
-          <h3>Nissan Skyline GT-R R34 shines</h3>
-          <p>Showcases Nissan's advanced AWD technology and cements the Skyline's status as a legendary performance car.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block reveal" id="process">
-      <div class="section-heading">
-        <span class="label">Development Process</span>
-        <h2>How this museum website was built as a spec-driven project.</h2>
-      </div>
-      <div class="process-grid">
-        <article>
-          <h3>Spec</h3>
-          <p>Defined the concept, design style, persuasion method, and brand archetype before writing code.</p>
-        </article>
-        <article>
-          <h3>QA</h3>
-          <p>Reviewed the site as a curator would: narrative flow, exhibit organization, artifact presentation, and visitor experience.</p>
-        </article>
-        <article>
-          <h3>Sprint</h3>
-          <p>Built the homepage and artifact archive in a focused cycle with clear visual goals and curated content.</p>
-        </article>
-        <article>
-          <h3>Implement</h3>
-          <p>Applied Swiss Bauhaus styling, museum labels, and authority-based storytelling to create a cohesive visitor experience.</p>
-        </article>
-        <article>
-          <h3>Review</h3>
-          <p>Added timeline context, a dedicated archive page, and expanded narrative to strengthen the exhibition quality.</p>
-        </article>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="site-footer reveal">
-      <p>Project: 90s JDM Museum · Process: Spec → QA → Sprint → Implement → Review</p>
-      <p>Created for a museum website review of Japanese Domestic Market sports cars.</p>
+      <p>90s JDM Museum is an editorial history project about the engineering, media, and industry legacy of 1990s Japanese performance cars.</p>
+      <p><a href="gallery.html">Explore the full artifact archive</a></p>
     </footer>
   </div>
+
   <script src="scripts.js" defer></script>
 </body>
 </html>
