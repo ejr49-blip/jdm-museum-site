@@ -107,9 +107,11 @@ body {
 
 .hero-copy-panel {
   padding: 2.5rem;
-  background: linear-gradient(180deg, rgba(230,57,70,0.04), rgba(255,255,255,0.03));
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, rgba(230,57,70,0.06), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
 }
 
 .hero-copy-panel .label {
@@ -139,8 +141,16 @@ body {
 
 .meta-card {
   padding: 1.75rem;
-  background: var(--surface-2);
+  background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
   border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.meta-card:hover {
+  border-color: rgba(255,255,255,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
 }
 
 .meta-card strong {
@@ -156,9 +166,12 @@ body {
 
 .section-block {
   margin-top: 3rem;
-  padding: 2rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-  border: 1px solid rgba(255,255,255,0.06);
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
 }
 
 .section-heading {
@@ -185,8 +198,11 @@ body {
 .car-card,
 .curator-grid article {
   padding: 1.5rem;
-  background: var(--surface);
+  background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
   border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s cubic-bezier(0.2,0.9,0.2,1);
 }
 
 .story-grid h3,
@@ -379,8 +395,12 @@ body {
 }
 .car-visual svg { width: 90%; height: 84px; display: block; }
 
-.car-card, .artifact-card { transition: transform 220ms ease, box-shadow 220ms ease; }
-.car-card:hover, .artifact-card:hover { transform: translateY(-6px); box-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+.car-card, .artifact-card { transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+.car-card:hover, .artifact-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+  border-color: var(--card-accent, var(--accent-soft));
+}
 
 /* per-card accent wiring */
 .accent-supra { --card-accent: var(--accent-supra); }
@@ -398,9 +418,22 @@ body {
 .img-credit { margin: 0.45rem 0 0; font-size: 0.85rem; color: var(--muted); font-style: italic; }
 
 /* more icons grid used on the homepage */
-.more-icons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1rem; }
-.more-icons .mini-card { padding: 0.85rem; background: var(--surface); border: 1px solid rgba(255,255,255,0.04); border-radius: 8px; text-align: center; }
-.mini-thumb { width:100%; height:80px; object-fit:cover; border-radius:6px; }
+.more-icons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 1.5rem; }
+.more-icons .mini-card { 
+  padding: 1rem; 
+  background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06); 
+  border-radius: 10px; 
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.more-icons .mini-card:hover { 
+  border-color: rgba(255,255,255,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateY(-4px);
+}
+.mini-thumb { width:100%; height:100px; object-fit:cover; border-radius:8px; display: block; }
 
 @media (max-width: 900px) {
   .more-icons { grid-template-columns: repeat(2,1fr); }
@@ -436,10 +469,15 @@ body {
 /* Lightbox and artifact image styles */
 .artifact-image {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   display: block;
   object-fit: cover;
-  height: 120px;
+  height: 140px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+.car-card:hover .artifact-image, .artifact-card:hover .artifact-image {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 
 .lightbox {
